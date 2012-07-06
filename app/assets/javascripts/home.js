@@ -3,9 +3,46 @@ jQuery(document).ready(function() {
     $("#carousel").simplecarousel({
         next: $('.next'),
         prev: $('.prev'),
-        slidespeed: 700,
-        auto: 5000,
-        width: 480,
-        height: 280
+        slidespeed: 350,
+        auto: false,
+        width: 400,
+        height: 300,
+        pagination: false
+    });
+    $("#project-1").simplecarousel({
+        next: $('#project-1-right'),
+        prev: $('#project-1-left'),
+        slidespeed: 350,
+        auto: false,
+        width: 475,
+        height: 300,
+        pagination: true
+    });
+    $("#project-2").simplecarousel({
+        next: $('#project-2-right'),
+        prev: $('#project-2-left'),
+        slidespeed: 350,
+        auto: false,
+        width: 475,
+        height: 300,
+        pagination: false
+    });
+    $("#project-3").simplecarousel({
+        next: $('#project-3-right'),
+        prev: $('#project-3-left'),
+        slidespeed: 350,
+        auto: false,
+        width: 475,
+        height: 300,
+        pagination: false
+    });
+    $("#project-4").simplecarousel({
+        next: $('#project-4-right'),
+        prev: $('#project-4-left'),
+        slidespeed: 350,
+        auto: false,
+        width: 475,
+        height: 300,
+        pagination: false
     });
 });

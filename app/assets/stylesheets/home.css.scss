@@ -1,3 +1,104 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.project {
+  position: relative;
+  .project-header {
+    height: 44px;
+    @include gradient-vertical(rgba(0,0,0,0.0),$blackTransLight);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    border-top: 1px solid rgba(174, 174, 174, 1);
+
+    h2 {
+      line-height: 44px;
+    }
+  }
+  .carousel-container {
+    //background: url('img-compBlank.png') no-repeat left center;
+    min-height: 375px;
+    position: relative;
+    z-index: 1;
+  }
+  .divider {
+    height: 1px;
+    background-color: rgba(0,0,0,0.1);
+    @include box-shadow(0 1px 0 rgba(255,255,255,0.5));
+    margin: 10px 0;
+  }
+  .project-tags {
+    @include clearfix;
+    margin-bottom: 20px;
+    .badge {
+      float: left;
+      margin-right: 2px;
+      margin-bottom: 2px;
+    }
+  }
+  .project-controls {
+    margin-top: 20px;
+    .pagination {
+
+    }
+    .leftright {
+      .left,.right {
+        font-size: 30px;
+        text-align: right;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        float: right;
+        margin-left: 30px;
+        text-indent: -9999px;
+        @include opacity(0.4);
+        i{
+          display:none;
+        }
+        &:hover {
+        @include opacity(0.8);
+        }
+        &:active {
+          position: relative;
+          top: 1px;
+          @include opacity(1);
+        }
+      }
+      .left {
+        background: url('img-arrowLeft.png') no-repeat;
+      }
+      .right {
+        background: url('img-arrowRight.png') no-repeat;
+      }
+    }
+  }
+  .carousel-frame {
+    @include box-shadow(0 2px 0 rgba(255,255,255,0.5));
+    margin: 0 auto;
+    border: 2px solid rgba(0,0,0,0.2);
+    margin-top: -25px;
+    @include border-radius(5px);
+  }
+  .carousel-pagination {
+    padding: 0;
+    margin: 0;
+    li {
+      font-size: 40px;
+      width: 40px;
+      height: 40px;
+      float: left;
+    }
+  }
+  .portfolio-items {
+    width: 475px;
+    height: 300px;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      width: 475px;
+      height: 300px;
+    }
+  }
+}

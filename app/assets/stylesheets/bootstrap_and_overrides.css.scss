@@ -2,5 +2,33 @@
 $iconSpritePath: asset-url('glyphicons-halflings.png', image);
 $iconWhiteSpritePath: asset-url('glyphicons-halflings-white.png', image);
 @import "bootstrap";
-body { padding-top: 60px; }
+body {
+  padding-top: 60px;
+  color: #555;
+  background: #d3d5df url('bg-lightTextured.png') repeat;
+  font-weight: 200;
+}
+
 @import "bootstrap-responsive";
+
+.content {
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+}
+
+.navbar-inner {
+  background: rgba(0,0,0,0.4);
+}
+
+h1, h2, h3, h4, h5 {
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+h1 {
+}
+h2 {
+  color: #44484f;
+}
+h3 {
+  color: #555555;
+  font-weight: normal;
+}
