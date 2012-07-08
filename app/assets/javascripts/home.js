@@ -1,5 +1,24 @@
 jQuery(document).ready(function() {
     // initialize carousel
+
+    $(".carousel")
+    .each(function(){
+        i = $(this).attr('id');
+        ir = $(this).parent().find(".right");
+        il = $(this).parent().find(".left");
+        $(this)
+        .simplecarousel({
+            next: ir,
+            prev: il,
+            slidespeed: 350,
+            auto: false,
+            width: 400,
+            height: 300,
+            pagination: true
+        });
+    });
+
+/*
     $("#carousel").simplecarousel({
         next: $('.next'),
         prev: $('.prev'),
@@ -45,4 +64,5 @@ jQuery(document).ready(function() {
         height: 300,
         pagination: false
     });
+*/
 });

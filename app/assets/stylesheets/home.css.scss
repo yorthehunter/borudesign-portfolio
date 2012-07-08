@@ -5,6 +5,7 @@
 
 .project {
   position: relative;
+  margin-bottom: 3em;
   .project-header {
     height: 44px;
     @include gradient-vertical(rgba(0,0,0,0.0),$blackTransLight);
@@ -41,52 +42,85 @@
     .pagination {
 
     }
-    .leftright {
-      .left,.right {
-        font-size: 30px;
-        text-align: right;
-        cursor: pointer;
-        width: 30px;
-        height: 30px;
-        float: right;
-        margin-left: 30px;
-        text-indent: -9999px;
-        @include opacity(0.4);
-        i{
-          display:none;
-        }
-        &:hover {
-        @include opacity(0.8);
-        }
-        &:active {
-          position: relative;
-          top: 1px;
-          @include opacity(1);
-        }
+    .left,.right {
+      font-size: 30px;
+      text-align: right;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      float: right;
+      margin-left: 10px;
+      text-indent: -9999px;
+      @include opacity(0.4);
+      i{
+        display:none;
       }
-      .left {
-        background: url('img-arrowLeft.png') no-repeat;
+      &:hover {
+      @include opacity(0.8);
       }
-      .right {
-        background: url('img-arrowRight.png') no-repeat;
+      &:active {
+        position: relative;
+        top: 1px;
+        @include opacity(1);
       }
+    }
+    .left {
+      background: url('img-arrowLeft.png') no-repeat;
+    }
+    .right {
+      background: url('img-arrowRight.png') no-repeat;
     }
   }
   .carousel-frame {
     @include box-shadow(0 2px 0 rgba(255,255,255,0.5));
     margin: 0 auto;
     border: 2px solid rgba(0,0,0,0.2);
-    margin-top: -25px;
+    margin-top: 1em;
     @include border-radius(5px);
+    position: relative;
+    .icon-resize-full {
+      color: #6bb4ff;
+      font-size: 40px;
+      line-height: 40px;
+      @include opacity(0);
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      pointer-events: none;
+      text-shadow: 0 1px 0 rgba(255,255,255,1), 0 -1px 0 rgba(0,0,0,1);
+      z-index: 1;
+      @include transition(opacity 150ms ease-in-out);
+    }
+    &:hover {
+      .icon-resize-full {
+        @include opacity(0.8);
+      }
+    }
   }
   .carousel-pagination {
+    list-style: none;
     padding: 0;
-    margin: 0;
+    @extend .span3;
+    @extend .offset1;
+    float: left;
     li {
-      font-size: 40px;
-      width: 40px;
-      height: 40px;
+      text-indent: -9999px;
+      width: 14px;
+      height: 14px;
+      @include border-radius(7px);
+      @include box-shadow(inset 0 2px 4px rgba(0,0,0,0.4));
+      @include opacity(0.8);
+      border-bottom: 1px solid #FFF;
       float: left;
+      margin: 20px 5px;
+      cursor: pointer;
+      background-color: rgba(0,0,0,0.3);
+      &.carousel-pagination-active {
+        background-color: #6bb4ff;
+      }
+      &:hover {
+        @include opacity(1.0);
+      }
     }
   }
   .portfolio-items {
@@ -99,6 +133,11 @@
     li {
       width: 475px;
       height: 300px;
+      a{
+        display: block;
+        width: 475px;
+        height: 300px;
+      }
     }
   }
 }

@@ -5,7 +5,7 @@ $iconWhiteSpritePath: asset-url('glyphicons-halflings-white.png', image);
 body {
   padding-top: 60px;
   color: #555;
-  background: #d3d5df url('bg-lightTextured.png') repeat;
+  background: #d3d5df url('bg-lightTextured.png') repeat fixed;
   font-weight: 200;
 }
 
@@ -18,6 +18,10 @@ body {
 
 .navbar-inner {
   background: rgba(0,0,0,0.4);
+}
+
+.modal-backdrop, .modal-backdrop.fade.in {
+  background: url('bg-darkLined.png') repeat fixed;
 }
 
 h1, h2, h3, h4, h5 {
