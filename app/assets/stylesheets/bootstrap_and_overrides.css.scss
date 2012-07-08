@@ -25,6 +25,10 @@ body {
     background: url('logo-sm-borudesign.png') no-repeat;
     margin-top: 5px;
     padding: 0;
+    @include opacity(0.8);
+    &:hover {
+      @include opacity(1);
+    }
   }
 }
 
