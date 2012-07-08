@@ -3,7 +3,6 @@ $iconSpritePath: asset-url('glyphicons-halflings.png', image);
 $iconWhiteSpritePath: asset-url('glyphicons-halflings-white.png', image);
 @import "bootstrap";
 body {
-  padding-top: 60px;
   color: #555;
   background: #d3d5df url('bg-lightTextured.png') repeat fixed;
   font-weight: 200;
@@ -18,11 +17,21 @@ body {
 
 .navbar-inner {
   background: rgba(0,0,0,0.4);
+  border-bottom: 1px solid rgba(0,0,0,0.8);
+  .brand {
+    text-indent: -9999px;
+    height: 35px;
+    width: 222px;
+    background: url('logo-sm-borudesign.png') no-repeat;
+    margin-top: 5px;
+    padding: 0;
+  }
 }
 
 .modal-backdrop, .modal-backdrop.fade.in {
   background: url('bg-darkLined.png') repeat fixed;
 }
+
 
 h1, h2, h3, h4, h5 {
   text-shadow: 0 1px 0 rgba(255,255,255,0.5);
