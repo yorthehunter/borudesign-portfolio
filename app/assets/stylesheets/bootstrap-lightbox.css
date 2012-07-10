@@ -17,7 +17,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ========================================================= */
- 
+
+
 .lightbox {
 	background-color: transparent;
 	display: block;
@@ -26,7 +27,6 @@
 	z-index: 1050;
 	position: relative;
 	top: 70px;
-	
 }
 .lightbox-content {
 	display: inline-block;
