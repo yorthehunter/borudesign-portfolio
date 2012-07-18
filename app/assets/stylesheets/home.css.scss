@@ -2,145 +2,31 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-.project {
-  position: relative;
-  margin-bottom: 3em;
-  .project-header {
-    height: 44px;
-    @include gradient-vertical(rgba(0,0,0,0.0),$blackTransLight);
-    border-bottom: 1px solid rgba(255,255,255,0.5);
-    border-top: 1px solid rgba(174, 174, 174, 1);
-
-    h2 {
-      line-height: 44px;
-    }
-  }
-  .carousel-container {
-    //background: url('img-compBlank.png') no-repeat left center;
-    min-height: 375px;
-    position: relative;
-    z-index: 1;
-  }
-  .divider {
-    height: 1px;
-    background-color: rgba(0,0,0,0.1);
-    @include box-shadow(0 1px 0 rgba(255,255,255,0.5));
-    margin: 10px 0;
-  }
-  .project-tags {
-    @include clearfix;
-    margin-bottom: 20px;
-    .badge {
-      float: left;
-      margin-right: 2px;
-      margin-bottom: 2px;
-    }
-  }
-  .project-details {
-    margin-top: 1em;
-  }
-  .project-controls {
-    margin-top: 20px;
-    .pagination {
-
-    }
-    .left,.right {
-      font-size: 30px;
-      text-align: right;
-      cursor: pointer;
-      width: 30px;
-      height: 30px;
-      float: right;
-      margin-left: 10px;
-      text-indent: -9999px;
-      @include opacity(0.4);
-      i{
-        display:none;
-      }
-      &:hover {
-      @include opacity(0.8);
-      }
-      &:active {
-        position: relative;
-        top: 1px;
-        @include opacity(1);
-      }
-    }
-    .left {
-      background: url('img-arrowLeft.png') no-repeat;
-    }
-    .right {
-      background: url('img-arrowRight.png') no-repeat;
-    }
-  }
-  .carousel-frame {
-    @include box-shadow(0 2px 0 rgba(255,255,255,0.5));
-    margin: 0 auto;
-    border: 2px solid rgba(0,0,0,0.2);
-    margin-top: 1em;
-    @include border-radius(5px);
-    position: relative;
-    .icon-resize-full {
-      color: #6bb4ff;
-      font-size: 40px;
-      line-height: 40px;
-      @include opacity(0);
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      pointer-events: none;
-      text-shadow: 0 1px 0 rgba(255,255,255,1), 0 -1px 0 rgba(0,0,0,1);
-      z-index: 1;
-      @include transition(opacity 150ms ease-in-out);
-    }
-    &:hover {
-      .icon-resize-full {
-        @include opacity(0.8);
-      }
-    }
-  }
-  .carousel-pagination {
-    list-style: none;
-    padding: 0;
-    @extend .span3;
-    @extend .offset1;
+.intro-content {
+  @extend .clearfix;
+  background: url('img-lockedFolder.png') no-repeat right center;
+  padding-top: 90px;
+  padding-bottom: 30px;
+  margin-bottom: 120px;
+  h1, h2 {
     float: left;
-    li {
-      text-indent: -9999px;
-      width: 14px;
-      height: 14px;
-      @include border-radius(7px);
-      @include box-shadow(inset 0 2px 4px rgba(0,0,0,0.4));
-      @include opacity(0.8);
-      border-bottom: 1px solid #FFF;
-      float: left;
-      margin: 20px 5px;
-      cursor: pointer;
-      background-color: rgba(0,0,0,0.3);
-      &.carousel-pagination-active {
-        background-color: #6bb4ff;
-      }
-      &:hover {
-        @include opacity(1.0);
-      }
-    }
   }
-  .portfolio-items {
-    width: 475px;
-    height: 300px;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    li {
-      width: 475px;
-      height: 300px;
-      a{
-        display: block;
-        width: 475px;
-        height: 300px;
-      }
-    }
+  h1 {
+    font-size: 64px;
+    line-height: 1em;
+    padding: 30px;
+    color: #FFF;
+    text-shadow: 0 2px 0 rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+    background-color: rgba(3,0,145,0.7);
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 1em;
+    padding: 20px;
+    color: #CCC;
+    text-shadow: 0 2px 0 rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+    background-color: rgba(0,0,0,0.4);
   }
 }

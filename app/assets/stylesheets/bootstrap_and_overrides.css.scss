@@ -4,7 +4,7 @@ $iconWhiteSpritePath: asset-url('glyphicons-halflings-white.png', image);
 @import "bootstrap";
 body {
   color: #555;
-  background: #d3d5df url('bg-lightTextured.png') repeat fixed;
+  background: #2c3668 url('bg-bluePaperGrid.png') repeat fixed;
   font-weight: 200;
   font-family: "PTSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   padding-left: 0 !important;
@@ -18,31 +18,91 @@ body {
   margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
 }
 
-.navbar-inner {
-  background: rgba(0,0,0,0.4);
-  border-bottom: 1px solid rgba(0,0,0,0.8);
-  .brand {
-    text-indent: -9999px;
-    height: 35px;
-    width: 222px;
-    background: url('logo-sm-borudesign.png') no-repeat;
-    margin-top: 5px;
+.navbar{
+  .container {
+    width: 940px;
+  }
+  .nav {
+    li {
+      a {
+        color: $linkColor;
+        padding: 20px;
+        font-size: 16px;
+        &:hover {
+          color: $linkColorHover;
+          background-color: rgba(0,0,0,0.1);
+        }
+      }
+      &.dropdown{
+        &.open {
+          background: #f2ffff;
+          a {
+            color: #555;
+            text-shadow: 0 1px 0 #FFF;
+          }
+        }
+      }
+    }
+  }
+  .dropdown-menu {
+    @include box-shadow(0 8px 10px rgba(0,0,0,0.6));
+    @include border-radius(0 0 5px 5px);
+    border: none;
+    background-color: #f2ffff;
+    margin-top: 0;
+    &:after {
+      display: none;
+    }
+    &:before {
+      display: none;
+    }
+    form.signin {
+      padding: 20px 20px 0;
+      label {
+        font-size: 13px;
+        color: #555;
+      }
+      input {
+        background-color: #deeaea;
+        @include border-radius(0);
+        @include box-shadow(none);
+        border: none;
+      }
+    }
+  }
+
+  .navbar-inner {
+    background: rgba(0,0,0,0.4);
+    height: 62px;
+    margin: 0;
     padding: 0;
-    @include opacity(0.8);
-    &:hover {
-      @include opacity(1);
+    font-family: "BebasRegular", "Helvetica Neue", "Helvetica", sans-serif;
+    text-transform: uppercase;
+    .brand {
+      position: relative;
+      background: #f2ffff url('logo-rr-brand.png') no-repeat center center;
+      padding: 0;
+      margin: 0;
+      height: 80px;
+      display: block;
+      width: 100%;
+      text-indent: -9999px;
+      border-bottom: 1px solid #FFF;
+      @include box-shadow(0 2px 4px rgba(0,0,0,0.4));
+      @include border-radius(0 0 2px 2px);
     }
   }
 }
 
-.modal-backdrop, .modal-backdrop.fade.in {
-  background: url('bg-darkLined.png') repeat fixed;
+.btn {
+  font-family: "BebasRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
 
 
 h1, h2, h3, h4, h5 {
-  font-family: "PTSansBold", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "BebasRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  text-transform: uppercase;
 }
 h1 {
 }
@@ -54,32 +114,4 @@ h3 {
   font-size: 1.5em;
   color: #555555;
   font-weight: normal;
-}
-
-.lightbox {
-  background-color: transparent;
-  display: block;
-  text-align: center;
-  line-height: 0;
-  z-index: 1050;
-  position: relative;
-  top: 70px;
-}
-.lightbox-content {
-  display: inline-block;
-  padding: 10px;
-  background-color: #ffffff;
-  border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  *border: 1px solid #999;
-  /* IE6-7 */
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
-  background-clip: padding-box;
 }

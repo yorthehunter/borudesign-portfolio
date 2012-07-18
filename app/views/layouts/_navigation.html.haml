@@ -1,3 +1,27 @@
-= link_to "Boru Design", root_path, :class => 'brand'
-
-// TODO - Add back to top link and/or simple navigation
+.row
+  .span3
+    = link_to "ReviewRight", root_path, :class => 'brand', :id => 'logo'
+  %ul.nav.pull-right
+    %li
+      %a{:href => "#"} About
+    %li
+      %a{:href => "#"} Help
+    %li
+      %a{:href => "#"} Contact
+    %li
+      %a{:href => "#"} Register
+    %li.dropdown
+      %a{:href => "#", :class => "dropdown-toggle", :data => {:toggle => "dropdown"}}
+        Sign In
+        %i.icon-caret-down
+      %ul.dropdown-menu
+        %form.signin
+          %label Email
+          %input.span4{:type => "text"}
+          %label Password
+          %input.span4{:type => "text"}
+          %label
+            %input{:type => "checkbox"}
+            Remember me
+          .clearfix
+            %button.btn.btn-primary.span2.clearfix Sign In

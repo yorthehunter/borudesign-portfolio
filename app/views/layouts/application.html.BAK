@@ -1,0 +1,197 @@
+<html><head>
+    <title>ReviewRight Assessment</title>
+    <link href="/assets/application-1c96b2e6fb9e91faa0c9236f769ec20b.css" media="all" rel="stylesheet" type="text/css">
+    <script src="/assets/application-5f61c12e7d542d177fdde48e81ed13e0.js" type="text/javascript"></script>
+    <meta content="authenticity_token" name="csrf-param">
+<meta content="1YkoVTaIJiC5JQyjSCBr71IQR85c3TX5tKAEZrdWvlo=" name="csrf-token">
+    <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+  <style type="text/css"></style></head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="row">
+            <div class="span3">
+              <a href="/" id="logo" class="brand">
+                <img src="assets/logo-rr-brand.png" />
+              </a>
+            </div>
+            <nav>
+              <ul class="nav pull-right">
+                <div class="btn-group">
+                  <button class="btn btn-primary">Register</button>
+                  <button class="btn btn-primary">Sign In</button>
+                </div>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <a href="/" style="padding-left:15px"><img alt="ReviewRight" src="/assets/logo-eaedb7b44c096ca30e99b34eaafd841f.png"></a>
+<div class="row">
+  <div id="done-right"><br>
+    <div id="done-right-indent">
+  <h3>Document Review done Right.</h3>
+  Good document reviewers are in high demand. They save counsel time and money -- and help win cases. Can you pass our test and join them?<br><br>
+  </div>
+  <div class="border_container">
+      <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post" style="margin-bottom:5px"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="1YkoVTaIJiC5JQyjSCBr71IQR85c3TX5tKAEZrdWvlo="></div>
+          <label for="user_first_name" style="display:inline-block;width:100px">First name</label>
+  <label for="user_last_name" style="display:inline-block;width:160px;padding-left:5px">Last name</label>
+
+  <input id="user_first_name" maxlength="20" name="user[first_name]" size="20" style="width:100px" type="text">
+  <input id="user_last_name" maxlength="30" name="user[last_name]" size="30" style="width:160px" type="text">
+
+  <label for="user_email">Email</label>
+  <input id="user_email" name="user[email]" size="30" style="width:270px" type="text">
+
+  <label for="user_city" style="display:inline-block;width:220px">City</label>
+  <label for="user_state" style="display:inline-block;width:40px;padding-left:5px">State</label>
+
+  <input id="user_city" maxlength="50" name="user[city]" size="50" style="width:220px" type="text">
+  <input id="user_state" maxlength="2" name="user[state]" placeholder="PA" size="2" style="width:40px" type="text">
+
+  <label for="user_region_id">Home/Base Region</label>
+  <select id="user_region_id" name="user[region_id]"><option value="">Desired job site</option>
+<option value="194">Annapolis</option>
+<option value="195">Atlanta</option>
+<option value="196">Augusta</option>
+<option value="197">Austin</option>
+<option value="198">Bismarck</option>
+<option value="199">Boise</option>
+<option value="200">Boston</option>
+<option value="201">Buffalo</option>
+<option value="202">Charleston</option>
+<option value="203">Cheyenne</option>
+<option value="204">Chicago</option>
+<option value="205">Cleveland</option>
+<option value="206">Columbia</option>
+<option value="207">Columbus</option>
+<option value="208">Concord</option>
+<option value="209">Dallas</option>
+<option value="210">Denver</option>
+<option value="211">Des Moines</option>
+<option value="212">Detroit</option>
+<option value="213">Dover</option>
+<option value="214">Hartford</option>
+<option value="215">Helena</option>
+<option value="216">Honolulu</option>
+<option value="217">Houston</option>
+<option value="218">Indianapolis</option>
+<option value="219">Jackson</option>
+<option value="220">Lincoln</option>
+<option value="221">Juneau</option>
+<option value="222">Lansing</option>
+<option value="223">Las Vegas</option>
+<option value="224">Little Rock</option>
+<option value="225">Louisville</option>
+<option value="226">Los Angeles</option>
+<option value="227">Madison</option>
+<option value="228">Miami</option>
+<option value="229">Montgomery</option>
+<option value="230">Montpelier</option>
+<option value="231">Nashville</option>
+<option value="232">New Orleans</option>
+<option value="233">New York</option>
+<option value="234">Oklahoma City</option>
+<option value="235">Olympia</option>
+<option value="236">Philadelphia</option>
+<option value="237">Pierre</option>
+<option value="238">Pittsburgh</option>
+<option value="239">Phoenix</option>
+<option value="240">Portland</option>
+<option value="241">Providence</option>
+<option value="242">Raleigh</option>
+<option value="243">Richmond</option>
+<option value="244">Salt Lake City</option>
+<option value="245">San Diego</option>
+<option value="246">San Francisco</option>
+<option value="247">Santa Fe</option>
+<option value="248">St. Louis</option>
+<option value="249">St. Paul</option>
+<option value="250">Topeka</option>
+<option value="251">Trenton</option>
+<option value="252">Washington DC</option></select>
+
+  <label for="user_password" style="display:inline-block;width:130px">Password</label>
+  <label for="user_password_confirmation" style="display:inline-block;width:130px;padding-left:5px">Confirm password</label>
+
+  <input id="user_password" name="user[password]" size="30" style="width:130px" type="password">
+  <input id="user_password_confirmation" name="user[password_confirmation]" size="30" style="width:130px" type="password">
+
+  <input class="btn btn-large btn-primary" name="commit" type="submit" value="Create my account">
+
+
+        <div class="right-label">Already registered? <a href="/signin">Sign in</a></div>
+</form> </div><br>
+  <div id="testimonials">
+    <h3>Testimonials</h3><br>
+    <blockquote>
+  <p>ReviewRight<sup>TM</sup> is a "must have" tool in the risk management tool kit of any firm with substantial document review requirements. The benefits, measured in terms of improved productivity, reduced errors and rework, and better-informed staffing decisions, make it a compelling investment.</p>
+  <small>Norman Clark, <a href="http://www.walkerclark.com">Walker Clark LLC</a></small>
+</blockquote>
+
+  </div>
+  </div>
+  <div id="how_it_works"><br>
+  <div class="border_container">
+    <h1>How it Works</h1>
+    <div class="row">
+      <div class="span7">
+        <img alt="Profile" class="how-it-works-heading" height="120" src="/assets/profile-bf0e68ecb9c4d1c975f018764ad63321.png" width="90">
+        <h4>Create a Profile.</h4>
+        Your profile highlights your qualifications and availability. Counsel can then find that you are
+        a likely candidate for their needs. It's important to fill out as much detail here as possible,
+        particularly your state licensure and location.
+      </div>
+    </div>
+    <div class="row">
+      <div class="span7">
+        <img alt="Exam" class="how-it-works-heading" height="120" src="/assets/exam-f37ffa8731713dbf47cfb82cb1e40abd.png" width="90">
+        <h4>Take a simple Document Review test.</h4>
+        Prove your skills by reviewing real documents and categorizing them according to legal relevance.
+        Just as in real document review, you will be asked to classify documents by making fine distinctions
+        between categories under time pressure. You lose points for failing to recognize when a document
+        belongs to a category, and also for assigning it incorrectly.<br><br><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span7">
+        <img alt="Invitation" class="how-it-works-heading" height="120" src="/assets/invitation-80ebb1f39fc91c60f4fca5549a025df7.png" width="90">
+        <h4>Get invited to participate in a case!</h4>
+        Once Counsel finds that you're a perfect fit for an ongoing case, you'll be invited to complete the next
+        stage in the hiring process. At this point you a pre-screened, and well on your way to a rewarding job.
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+    </div>
+    <footer class="footer">
+  <div class="container">
+    <nav>
+      <ul>
+      <li>ReviewLess<sup>SM</sup> One Oxford Centre, 301 Grant Street, Suite 4300, Pittsburgh, PA 15219&nbsp;&nbsp;&nbsp;(412) 486-8606</li>
+      <li>&nbsp;</li>
+      <li>&nbsp;</li>
+      <li>&nbsp;</li>
+      <li>&nbsp;</li>
+      <li>&nbsp;</li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="http://docreviewmd.com/">News</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+
+</body></html>
