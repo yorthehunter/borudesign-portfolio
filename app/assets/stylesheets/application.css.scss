@@ -10,8 +10,8 @@
  * compiled file, but it's generally better to create a new file per style scope.
  */
 
-@import "bootstrap_and_overrides.css.scss";
 @import "variables-and-mixins.css.scss";
+@import "bootstrap_and_overrides.css.scss";
 @import "font-awesome.css.scss";
 @import "font-bebas.css.scss";
 @import "home.css.scss";
